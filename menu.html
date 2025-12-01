@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Memorice Duel — Menú</title>
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <header class="menu-header">
+    <h1>Memorice Duel</h1>
+  </header>
+  <section class="login-card" role="dialog" aria-labelledby="loginTitle">
+  <section class="controls">
+    <div class="player-names">
+      <label>Jugador 1:</label>
+      <input type="text" id="playerName1" placeholder="Jugador 1">
+
+      <label>Jugador 2:</label>
+      <input type="text" id="playerName2" placeholder="Jugador 2">
+    </div>
+
+    <div class="difficulty">
+      <label>Dificultad:</label>
+      <select id="difficulty">
+        <option value="4">Fácil (4 pares)</option>
+        <option value="6">Media (6 pares)</option>
+        <option value="8">Difícil (8 pares)</option>
+      </select>
+    </div>
+
+    <div class="mode">
+      <label>Modo de juego:</label>
+      <select id="gameMode">
+        <option value="1">1 Jugador</option>
+        <option value="2">2 Jugadores</option>
+      </select>
+    </div>
+
+    <button id="startBtn">Iniciar Juego</button>
+  </section>
+
+  <section class="history">
+    <h2>Historial de partidas</h2>
+    <div id="recordsList">No hay partidas guardadas todavía.</div>
+  </section>
+  </section>
+
+  <h4>autoria de johan y jaime black</h4>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

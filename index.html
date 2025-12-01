@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Memorice Duel</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <main class="login-scene">
+    <div class="bg-decor" aria-hidden="true"></div>
+
+    <section class="login-card" role="dialog" aria-labelledby="loginTitle">
+      <header class="card-header">
+        <img src="assets/img/logo.png" alt="Logo" class="logo" id="logoImg">
+        <div>
+          <h1 id="loginTitle">Iniciar sesión — Memorice Duel</h1>
+          <p class="subtitle">Ingresa para continuar y desbloquear el duelo</p>
+        </div>
+      </header>
+
+      <form id="loginForm" class="card-body" novalidate>
+        <label class="field">
+          <span class="label-text">Correo electrónico</span>
+          <input type="email" id="email" placeholder="tu@ejemplo.com" required>
+          <small class="hint">Usa un correo válido (demo local)</small>
+        </label>
+
+        <label class="field">
+          <span class="label-text">Nombre de usuario</span>
+          <input type="text" id="username" placeholder="Nombre visible en partidas" maxlength="20" required>
+          <small class="hint">Máx. 20 caracteres</small>
+        </label>
+
+        <label class="field">
+          <span class="label-text">Contraseña</span>
+          <div class="pw-row">
+            <input type="password" id="password" placeholder="Contraseña" minlength="4" required>
+            <button type="button" id="togglePw" class="toggle-pw" aria-label="Mostrar contraseña">👁️</button>
+          </div>
+          <small class="hint">No guardes contraseñas reales en este demo</small>
+        </label>
+
+        <div class="avatar-select">
+          <p class="label-text">Elige tu avatar</p>
+          <div class="avatars">
+            <button type="button" class="avatar" data-img="1.png" aria-pressed="false"><img src="assets/img/1.png" alt="Avatar 1"></button>
+            <button type="button" class="avatar" data-img="2.png" aria-pressed="false"><img src="assets/img/2.png" alt="Avatar 2"></button>
+            <button type="button" class="avatar" data-img="3.png" aria-pressed="false"><img src="assets/img/3.png" alt="Avatar 3"></button>
+            <button type="button" class="avatar" data-img="4.png" aria-pressed="false"><img src="assets/img/4.png" alt="Avatar 4"></button>
+          </div>
+          <small class="hint">El avatar se mostrará en el menú y en el historial</small>
+        </div>
+
+        <div class="actions">
+          <button id="playBtn" type="submit" class="primary">¡Entrar al duelo!</button>
+          <button type="button" id="guestBtn" class="ghost">Jugar como invitado</button>
+        </div>
+      </form>
+
+      <footer class="card-footer">
+        <p class="tiny">Se guardan localmente tu nombre, correo y avatar (localStorage).</p>
+      </footer>
+    </section>
+
+    <!-- Splash de éxito (mostrará antes de ir a loading.html) -->
+    <div id="successSplash" class="hidden">
+      <div class="splash-box">
+        <h2>¡Bienvenido!</h2>
+        <p>Iniciando sesión...</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

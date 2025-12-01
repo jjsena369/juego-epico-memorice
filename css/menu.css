@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif; 
+    background-image: url(../assets/img/vs.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: white; 
+    text-align:center;
+    padding:40px;
+        margin:0; 
+    }
+
+.menu-container{ max-width:760px; 
+    margin:20px auto; 
+    background: rgba(182, 54, 54, 0.03); 
+    padding:24px; 
+    border-radius:12px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.6);
+    }
+
+.menu-header{ display:flex; 
+    gap:18px; 
+    align-items:center;
+    justify-content:center;
+    margin-bottom:12px; 
+    }
+
+.menu-avatar{ width:72px; 
+    height:72px; 
+    border-radius:10px;
+     object-fit:cover; 
+     border:2px solid rgba(255,255,255,0.06); 
+    }
+
+button{ margin:8px; 
+    padding:10px 20px;
+    border-radius:10px;
+    border:none; cursor:pointer; 
+    background:#2b6cff; color:white;
+    font-weight:600;
+    }
+    
+button:hover{ transform:translateY(-3px); 
+    box-shadow:0 8px 24px rgba(0,0,0,0.3);
+ }
+.difficulties, .modes{
+     margin-bottom:14px; 
+    }
+.notes{
+     color: #bfcce0; 
+     font-size:0.9rem;
+      margin-top:12px; 
+    }
+
+.login-card{ 
+    margin: 0 auto;
+    position: relative;
+    width: 680px; 
+  max-width:96%; 
+  background: rgba(0, 0, 0, 0.76);
+   border-radius: 12px; 
+   padding:18px; 
+   box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+   }
+   
